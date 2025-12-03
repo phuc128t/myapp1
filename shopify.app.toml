@@ -27,7 +27,7 @@ scopes = "write_products"
 redirect_urls = [ "https://myapp1-react.vercel.app/api/auth" ]
 
 [app_proxy]
-  url = "/proxy"
+  url = "/proxy/qr"
   subpath = "qr"
   prefix = "apps"
 

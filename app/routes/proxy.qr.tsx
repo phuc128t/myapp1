@@ -2,11 +2,9 @@ import qrcode from "qrcode";
 
 export const loader = async ({ request }) => {
   const url = new URL(request.url);
-  const productId = url.searchParams.get("id");
+  const handle = url.searchParams.get("handle");
 
-  console.log(productId);
-
-  const data = `https://128t-test-store.myshopify.com/products/${productId}`;
+  const data = `https://128t-test-store.myshopify.com/products/${handle}`;
 
   const qrSvg = await qrcode.toString(data, { type: "svg" });
 
