@@ -22,7 +22,7 @@ export default function App() {
     <div className={styles.index}>
       <div className={styles.content}>
         
-        <h1 className={styles.heading}>Welcome to myapp1!</h1>
+        <h1 className={styles.heading}>Welcome to Test 1!</h1>
         
         {showForm && (
           <Form className={styles.form} method="post" action="/auth/login">

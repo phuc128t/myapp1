@@ -1,6 +1,6 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-name = "myapp1"
+name = "App Test 1"
 client_id = "518f38ac0693dcb758e4fba193730856"
 application_url = "https://myapp1-react.vercel.app"
 embedded = true
@@ -20,6 +20,10 @@ uri = "/webhooks/app/uninstalled"
 [[webhooks.subscriptions]]
 topics = [ "app/scopes_update" ]
 uri = "/webhooks/app/scopes_update"
+
+[[webhooks.subscriptions]]
+topics = [ "products/update" ]
+uri = "/webhooks/product/update"
 
 
 [access_scopes]
