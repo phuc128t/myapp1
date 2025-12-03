@@ -21,10 +21,9 @@ export default function App() {
   return (
     <div className={styles.index}>
       <div className={styles.content}>
-        <h1 className={styles.heading}>Welcome to MyApp!</h1>
-        <p className={styles.text}>
-          This is the public marketing page of the app.
-        </p>
+        
+        <h1 className={styles.heading}>Welcome to myapp1!</h1>
+        
         {showForm && (
           <Form className={styles.form} method="post" action="/auth/login">
             <label className={styles.label}>
